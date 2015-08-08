@@ -10,7 +10,7 @@
 angular.module('yoTutApp')
   .controller('MainCtrl', function ($scope) {
     $scope.todos = [
-  
+
     ];
     $scope.addTodo = function() {
       $scope.todos.push($scope.todo);
@@ -18,5 +18,5 @@ angular.module('yoTutApp')
     };
     $scope.removeTodo = function(idx) {
       $scope.todos.splice(idx, 1);
-    }
+    };
   });
