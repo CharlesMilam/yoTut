@@ -18,4 +18,7 @@ angular.module('yoTutApp')
       $scope.todos.push($scope.todo);
       $scope.todo = '';
     };
+    $scope.removeTodo = function(idx) {
+      $scope.todos.splice(idx, 1);
+    }
   });
